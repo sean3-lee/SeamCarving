@@ -7,7 +7,7 @@
 
 using namespace std;
 
-// TODO Write this function
+
 int energy(const Pixel *const*image, int col, int row, int width, int height)
 {
   int totalsum = 0;
@@ -51,7 +51,7 @@ int energy(const Pixel *const*image, int col, int row, int width, int height)
   return totalsum;
 }
 
-// TODO Write this function
+
 int getVerticalSeam(const Pixel *const*image, int start_col, int width, int height, int* seam)
 {
   int col1 = start_col;
@@ -125,7 +125,6 @@ int getVerticalSeam(const Pixel *const*image, int start_col, int width, int heig
   return total_energy;
 }
 
-// TODO Write this function
 void removeVerticalSeam(Pixel **image, int& width, int height, int *verticalSeam)
 {
   for(int i = 0; i < height; i ++){
